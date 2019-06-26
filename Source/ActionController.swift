@@ -112,7 +112,7 @@ open class ActionController<ActionViewType: UICollectionViewCell, ActionDataType
     open var contentHeight: CGFloat = 0.0
 
     open var safeAreaInsets: UIEdgeInsets {
-        if #available(iOS 11, *) {
+        if #available(iOS 11, *), view.insetsLayoutMarginsFromSafeArea {
             return view.safeAreaInsets
         }
         return .zero
