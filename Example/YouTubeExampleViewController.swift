@@ -27,6 +27,14 @@ import XLActionController
 
 class YouTubeExampleViewController: UIViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        if #available(iOS 11.0, *) {
+            view.insetsLayoutMarginsFromSafeArea = false
+            print("SafeArea : \(view.safeAreaInsets)")
+        }
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
