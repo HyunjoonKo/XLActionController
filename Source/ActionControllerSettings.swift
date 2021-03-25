@@ -74,6 +74,14 @@ public struct ActionControllerSettings {
          */
         public var title: String? = "Cancel"
         /**
+         * The cancel view's title Font.
+         */
+        public var titleFont: String = UIFont.systemFont(ofSize: 14).fontName
+        /**
+         * The cancel view's title Font Size.
+         */
+        public var titleSize: CGFloat = 14.0
+        /**
          * The cancel view's height. Its default value is `60`.
          */
         public var height = CGFloat(60.0)
@@ -81,6 +89,10 @@ public struct ActionControllerSettings {
          * The cancel view's background color. Its default value is `UIColor.blackColor().colorWithAlphaComponent(0.8)`.
          */
         public var backgroundColor = UIColor.black.withAlphaComponent(0.8)
+        /**
+        * The cancel view's title color. Its default value is `UIColor.white`.
+        */
+        public var titleColor = UIColor.white
         /**
           * A Boolean value that determines whether the collection view can be partially covered by the 
           * cancel view when it is pulled down. Its default value is `true`
